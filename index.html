@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Edie Homepage</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@700;800&family=Montserrat:wght@300;400&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="logo">Edie</div>
+
+      <div id='items' class="nav-items">
+        <a class="nav-item" href="#home" onclick="cambiaMenu();showMenu();">Home</a>
+        <a class="nav-item" href="#services" onclick="cambiaMenu();showMenu();">Services</a>
+        <a class="nav-item" href="#works" onclick="cambiaMenu();showMenu();">Our works</a>
+        <a class="nav-item" href="#team" onclick="cambiaMenu();showMenu();">Clients</a>
+        <a class="nav-item" href="#footer" onclick="cambiaMenu();showMenu();">Contact</a>
+      </div>
+
+      <div class="nav-burger" id="burger-menu" onclick="cambiaMenu(); showMenu();">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+
+    </div> <!-- end header -->
+    <div id="home">
+      <div class="home-title">
+        <div class="question">Unhappy with your website?</div>
+        <div class="title">We create beautiful and fast web services</div>
+      </div>
+      <div class="home-img">
+        <img src="images/heroImage.jpg" alt="team at work image">
+      </div>
+      <div class="home-description">
+        <div class="title">Story, emotion and purpose</div>
+        <div class="description-detail">We help transform your ideas into real world applications that will outperform
+          your toughest competition and help you achieve your strategic goals in short period of time.</div>
+        <div class="info-form">
+          <label for="info-req">Want us to contact you?</label>
+          <form>
+            <input type="email" placeholder="Email" id="info-req">
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+    </div> <!-- end home-->
+    <div class="main-container">
+
+
+
+      <div id="services">
+        <div class="title">We offer high demand services</div>
+        <div class="cards-section">
+          <div class="card design">
+            <div class="card-icon">
+              <span class="material-icons">edit</span>
+            </div>
+            <div class="card-title">UI/UX Design</div>
+            <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+              consequat aliquet id quis turpis.</div>
+            <div class="card-button">
+              <button>Get started</button>
+            </div>
+          </div>
+
+          <div class="card frontend">
+            <div class="card-icon">
+              <span class="material-icons">code</span>
+            </div>
+            <div class="card-title">Front End</div>
+            <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+              consequat aliquet id quis turpis.</div>
+            <div class="card-button">
+              <button>Get started</button>
+            </div>
+          </div>
+
+          <div class="card backend">
+            <div class="card-icon">
+              <span class="material-icons">storage</span>
+            </div>
+            <div class="card-title">Back End</div>
+            <div class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+              consequat aliquet id quis turpis.</div>
+            <div class="card-button">
+              <button>Get started</button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end services -->
+
+      <div id="works">
+        <div class="title">Good design means good business</div>
+        <div class="works-section">
+
+          <div class="raw1">
+            <div class="work item1">
+              <div class="work-img">
+                <img src="images/smarthome.jpg" alt="Smart home dashboard">
+              </div>
+              <div class="work-sector">Full stack application</div>
+              <div class="work-name">Smart home dashboard</div>
+            </div>
+
+            <div class="work item2">
+              <div class="work-img">
+                <img src="images/onboard.png" alt="Onboard application">
+              </div>
+              <div class="work-sector">UX/UI design</div>
+              <div class="work-name">Onboard application</div>
+            </div>
+          </div>
+
+          <div class="raw2">
+            <div class="work item3">
+              <div class="work-img">
+                <img src="images/booking.png" alt="Booking system">
+              </div>
+              <div class="work-sector">Mobile application</div>
+              <div class="work-name">Booking system</div>
+            </div>
+
+            <div class="work item4">
+              <div class="work-img">
+                <img src="images/juice-product.png" alt="Juice product homepage">
+              </div>
+              <div class="work-sector">Front End application</div>
+              <div class="work-name">Juice product homepage</div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="see-more">see more <span class="material-icons">arrow_right_alt</span></div>
+      </div> <!-- end works -->
+
+      <div id="team">
+        <div class="team-description">
+          <div class="meet">Meet the team</div>
+          <div class="title">We are chilled and a laidback team</div>
+          <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item gallery-item1">
+            <img src="images/person1.png" alt="Gallery image 1" class="gallery-img">
+          </figure>
+          <figure class="gallery-item gallery-item2">
+            <img src="images/person2.png" alt="Gallery image 2" class="gallery-img">
+          </figure>
+          <figure class="gallery-item gallery-item3">
+            <img src="images/person3.png" alt="Gallery image 3" class="gallery-img">
+          </figure>
+        </div>
+      </div> <!-- end team -->
+
+      <div id="cit">
+        <div class="content">
+          “Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”
+        </div>
+
+        <div class="author">
+          <div class="author-img">
+            <img src="images/person4.png" alt="Carlos Tran">
+          </div>
+
+          <div class="author-name">
+            <div class="name">Carlos Tran</div>
+            <div class="role">The Decorate Gatsby</div>
+          </div>
+        </div>
+      </div> <!-- end cit -->
+    </div> <!-- end main-container -->
+
+
+
+
+  </div> <!-- end container-->
+
+  <div id="footer">
+    <div class="foot-container">
+
+      <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#works">Our works</a>
+        <a href="#team">Clients</a>
+        <a href="#footer">Contact</a>
+      </div>
+
+      <div class="social">
+        <div class="logo">Edie</div>
+        <div class="social-icon">
+          <img src="social-svg/instagram.svg" alt="instagram" class="social-icon-img">
+          <img src="social-svg/linkedin.svg" alt="linkedin" class="social-icon-img">
+          <img src="social-svg/twitter.svg" alt="twitter" class="social-icon-img">
+        </div>
+      </div>
+
+      <div class="info-form">
+        <label for="info-req">Want us to contact you?</label>
+        <form>
+          <input type="email" placeholder="Email" id="info-req">
+          <button type="submit">Join</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="createdby">
+      created by <a href="https://github.com/vanessasg">vanessasg</a>
+    </div>
+
+  </div> <!-- end footer -->
+  <script>
+    function cambiaMenu(x) {
+      document.getElementById('burger-menu').classList.toggle('change');
+    }
+    function showMenu() {
+      document.getElementById('items').classList.toggle('show-items');
+    }
+  </script>
+</body>
+
+</html>
