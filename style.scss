@@ -153,7 +153,7 @@ body {
         }
     }
 
-    /* hide/show menu items when click on menu */
+    /* hide/show menu items when click on menu and items */
     .nav-items {
         display: none;
 
@@ -170,14 +170,19 @@ body {
     }
 
     .show-items {
-        display: block;
+        @media (max-width:850px){
+            display: block;
+
         a {
             @include nav-item();
             display: block;
             text-align: center;
-            
         }
+        }
+        
     }
+    
+    
 
     /* burger menu */
     .nav-burger {

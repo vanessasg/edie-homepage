@@ -116,7 +116,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* hide/show menu items when click on menu */
+  /* hide/show menu items when click on menu and items */
   /* burger menu */
   /* burger menu when click (X) */
 }
@@ -148,18 +148,20 @@ body {
     line-height: 53px;
   }
 }
-.header .show-items {
-  display: block;
-}
-.header .show-items a {
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  color: #333;
-  font-size: 1.8em;
-  line-height: 30px;
-  padding: 25px 0;
-  display: block;
-  text-align: center;
+@media (max-width: 850px) {
+  .header .show-items {
+    display: block;
+  }
+  .header .show-items a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    font-size: 1.8em;
+    line-height: 30px;
+    padding: 25px 0;
+    display: block;
+    text-align: center;
+  }
 }
 .header .nav-burger {
   padding: 5px;
